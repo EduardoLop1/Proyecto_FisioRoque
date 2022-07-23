@@ -1,26 +1,33 @@
 /*FUENTES*/
-@font-face{
-    font-family: "TrebuchetMS";
-    src: url("../fonts/TrebuchetMS.ttf");
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url("../fonts/TrebuchetMS.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face{
-    font-family: "BebasNeue";
-    src: url("../fonts/BebasNeue.otf");
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
-    font-family: "webSymbolsRegular";
-    src: url("../fonts/websymbols-regular-webfont.eot");
-    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/websymbols-regular-webfont.woff") format("woff"),
-        url("../fonts/websymbols-regular-webfont.ttf") format("truetype"),
-        url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "webSymbolsRegular";
+  src: url("../fonts/websymbols-regular-webfont.eot");
+  src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("../fonts/websymbols-regular-webfont.ttf") format("truetype"),
+    url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*
+
+/*{
+    box-sizing: border-box;
 }
 .body{
     margin: 0px;
@@ -42,8 +49,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
-    padding: 0 8rem;
+    margin: 0 auto;
+    max-width: 1024PX;
 }
 .header-nav__link-logo-container{
     display: flex;
@@ -53,8 +60,9 @@
 .header-nav__link-logo{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
+    /*object-fit: cover;
+}*/
+/*
 .header-nav__menu-list{
     display: flex;
     gap: 1rem;
@@ -69,82 +77,366 @@
     color: #2B5264;
     font-size: 20px;
 }
-.banner{
+.header-nav__menu-icon-container{
+    display: none;
     position: relative;
-    margin-top: 110px;
-    width: 100%;
+}*/
+.body {
+  margin: 0px;
+  min-height: 200vh;
+}
+
+.header {
+  position: fixed;
+  z-index: 25;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: var(--primary-all-transitions);
+  /*box-shadow: 0 0 0.125rem 0.250rem rgb(59,175,191, 0.5);*/
+
+}
+
+.header--scroll {
+  /*background-color: var(--primary-theme-color);
+    box-shadow: 0 0.0625rem 0.0625rem 0 var(--primary-shadow-color);*/
+}
+
+.header-nav {
+  background-color: white;
+  padding: 0.75rem 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.header-nav--scroll {
+  padding: 0.5rem 0;
+}
+
+.header-nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 1rem;
+}
+
+.header-nav__link-logo-container {
+  display: flex;
+  width: 250px;
+  height: 80px;
+}
+
+.header-nav__link-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav__menu-icon-container {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #2B5264;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.header-nav__menu-list {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-image: linear-gradient(to top, var(--primary-theme-color), var(--secondary-theme-color));
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  list-style: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.header-nav__menu-list--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header-nav__menu-item {
+  display: flex;
+}
+
+.header-nav__menu-link {
+  position: relative;
+  font-family: "BebasNeue";
+  text-decoration: none;
+  color: #2B5264;
+  font-size: 20px;
+  transition: all 0.25s ease-in-out;
+}
+
+.header-nav__menu-item--menu-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header-nav__menu-close-icon-container {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #fff;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/*BANNER*/
+.banner {
+  position: relative;
+  margin-top: 110px;
+  width: 100%;
+  height: 400px;
+  /*ALTO BANNER MOVIL*/
+  box-shadow: 0 0 0.125rem 0.250rem rgb(59, 175, 191, 0.5);
+}
+
+.banner::before {
+  content: '';
+  width: 100%;
+  height: 400px;
+  background-color: rgb(59, 175, 191);
+  position: absolute;
+  opacity: 0.6;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.banner-container {
+  position: absolute;
+  top: 5%;
+  /*Posiciona el texto a partir del 5% hacia abajo*/
+  left: 50%;
+  /*Posiciona el texto a partir del 50% del bloque*/
+  width: 600px;
+  text-align: center;
+  /*alinea todos los texto inline*/
+  margin-left: -300px;
+
+
+}
+
+.banner-container-h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 60px;
+  font-family: "BebasNeue";
+  letter-spacing: 1px;
+  color: RGB(5, 68, 77);
+  text-shadow: 0px 0px 1px aqua, 0px 1px 2px aqua, 0px 2px 3px aqua;
+
+}
+
+.banner-container-h2 {
+  font-family: "BebasNeue";
+  font-size: 50px;
+  margin-top: -50px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 0px 0px 1px black, 0px 1px 2px aqua, 0px 2px 3px black;
+
+}
+
+.banner-container-boton {
+  text-align: center;
+  padding: 10px 15px;
+  background-color: RGB(5, 68, 77);
+  color: white;
+  text-decoration: none;
+  font-family: "BebasNeue";
+
+}
+
+/*NOSOTROS*/
+.nosotros {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px auto;
+  box-shadow: 0 0 0.125rem 0.250rem rgb(59, 175, 191, 0.5);
+}
+
+.nosotros-container {
+
+  width: 1140px;
+  margin: 0 auto;
+  /*arriba y abajo 0 y lados automatico*/
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+
+}
+
+.nosotros-container-p {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 17px;
+}
+
+
+@media (min-width: 854px) {
+
+  /*HEADER*/
+  .header-nav__menu-icon-container,
+  .header-nav__menu-close-icon-container {
+    display: none;
+  }
+
+  .header-nav__menu-list {
+    position: static;
+    flex-direction: row;
+    background-image: none;
+    gap: 1rem;
+    opacity: 1;
+    width: auto;
+    pointer-events: auto;
+  }
+
+  .header-nav__link-logo-container {
+    display: flex;
+    width: 350px;
+    height: 110px;
+  }
+
+  /*BANNER*/
+  .banner {
     height: 600px;
-    box-shadow: 0 0 0.125rem 0.250rem rgb(59,175,191, 0.5);
-}
+  }
 
-.banner::before{
-    content: '';
-    width: 100%;
+  .banner::before {
     height: 600px;
-    background-color: rgb(59,175,191);
-    position: absolute;
-    opacity: 0.6;
-}
-.banner-img{
-    width: 100%;
-    height: 100%;
+  }
 
-}
-.banner-container{
-    position: absolute;
-    top: 5%;/*Posiciona el texto a partir del 40% hacia abajo*/
-	left: 50%;/*Posiciona el texto a partir del 50% del bloque*/
-	width: 600px;
-	text-align: center;/*alinea todos los texto inline*/
-	margin-left: -300px;
-    
-
-}
-.banner-container-h1{
-    text-align: center;
+  .banner-container-h1 {
     margin-top: 200px;
     font-size: 80px;
-    font-family: "BebasNeue";
-    letter-spacing: 1px;
-    color: RGB(5,68,77);
-    text-shadow: 0px 0px 1px aqua, 0px 1px 2px aqua, 0px 2px 3px aqua;
-    
-}
-.banner-container-h2{
-    font-family: "BebasNeue";
-    font-size: 70px;  
-    margin-top: -50px;
-    text-align: center;    
-    letter-spacing: 3px;
-    color: white;
-    text-shadow: 0px 0px 1px black, 0px 1px 2px aqua, 0px 2px 3px black;
-    
-}
-.banner-container-boton{
-    text-align: center;
+  }
+
+  .banner-container-h2 {
+    font-size: 70px;
+  }
+
+  .banner-container-boton {
     padding: 15px 20px;
-    background-color: RGB(5,68,77);
-    color: white;
-    text-decoration: none;
-    font-family: "BebasNeue";
-    
-}
-.nosotros{
-    padding-top: 40px;
-	padding-bottom: 40px;
-    margin: 4px auto;
-    box-shadow: 0 0 0.125rem 0.250rem rgb(59,175,191, 0.5);
-}
-.nosotros-container{
-    width: 1140px;
-	margin: 0 auto; /*arriba y abajo 0 y lados automatico*/
-	padding-left: 15px;
-	padding-right: 15px;
-	position: relative;
-    
-}
-.nosotros-container-p{
-    font-family: "BebasNeue";
+  }
+
+  /*NOSOTROS*/
+  .nosotros-container-p {
+    font-size: 20px;
+  }
+
+  /*SERVICIOS*/
+  .body-servicios {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    margin: 30px;
+    padding: 30px;
+
+  }
+
+  .body-servicios-individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.25%;
+
+  }
+
+  .body-servicios-individual:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .body-servicios-individual img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .body-testimonios {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    margin: 30px;
+    padding: 30px;
+
+  }
+
+  .body-testimonios-individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.25%;
+  }
+
+  .body-testimonios-individual:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .body-testimonios-individual img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+  h2 {
     text-align: center;
-	font-size: 20px;
+    font-size: 50px;
+  }
+
+  .body-ubicanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .body-ubicanos-mapa {
+    position: relative;
+    width: 90%;
+    height: 100%;
+  }
+
+  footer {
+    height: 100px;
+    background: blue;
+  }
 }

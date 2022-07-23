@@ -7,6 +7,12 @@
     <title>FISIO-ROQUE</title>
     <link rel="icon" type="favicon/x-icon" href="img/icon.png" />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 </head>
 
 <body class="body">
@@ -17,37 +23,208 @@
                     <img src="img/logofinal.png" alt="logotipo" width="350" height="110"
                         class="header-nav__link-logo" />
                 </a>
+                <button class="header-nav__menu-icon-container" id="menuIconContainer"><i
+                        class="bi bi-list"></i></button>
                 <ul class="header-nav__menu-list">
                     <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link">INICIO</a></li>
-                    <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link">NOSOTROS</a></li>
+                    <li class="header-nav__menu-item"><a href="#nosotros" class="header-nav__menu-link">NOSOTROS</a>
+                    </li>
                     <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link">ESPECIALIDADES</a></li>
                     <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link">SERVICIOS</a></li>
                     <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link">CONTACTO</a></li>
+                    <li class="header-nav__menu-item header-nav__menu-item--menu-close">
+                        <button class="header-nav__menu-close-icon-container" id="menuCloseIconContainer">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section class="banner">
-        <img src="https://i.postimg.cc/qqFwwd9m/img.webp" class="banner-img"/>
-        <div class="banner-container">
-            <h1 class="banner-container-h1">TERAPIA FISICA</h1>
-            <h2 class="banner-container-h2">TERAPIA RESPIRATORIA</h2>
-            <a href="#nosotros" class="banner-container-boton">Ver más</a>
+    <main>
+        <section class="banner">
+            <img src="https://i.postimg.cc/qqFwwd9m/img.webp" class="banner-img" />
+            <div class="banner-container">
+                <h1 class="banner-container-h1">TERAPIA FISICA</h1>
+                <h2 class="banner-container-h2">TERAPIA RESPIRATORIA</h2>
+                <a href="#" class="banner-container-boton">Ver más</a>
+            </div>
+        </section>
+        <section class="nosotros" id="nosotros">
+            <div class="nosotros-container">
+                <p class="nosotros-container-p">Todo el equipo de fisioterapeutas de FISIO-ROQUE es personal titulado,
+                    lo que garantiza que todos los
+                    servicios ofrecidos en nuestras clínicas se desarrollen con altos conocimientos, calidad y por
+                    supuesto una atención personalizada.
+                </p>
+                <p class="nosotros-container-p">
+                    El único centro especializado en Terapia física y terapia Cardio-Respiratoria en la Ciudad de
+                    Chimbote.
+                </p>
+            </div>
+
+        </section>
+    </main>
+    <!--servicios-->
+    <h2>Nuestros servicios</h2>
+    <section class="body-servicios">
+        <div class="body-servicios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="body-servicios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="body-servicios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="body-servicios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="body-servicios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="body-servicios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="body-servicios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
+            </p>
         </div>
     </section>
-    <section class="nosotros">
-        <div class="nosotros-container">
-            <p class="nosotros-container-p">Todo el equipo de fisioterapeutas de FISIO-ROQUE es personal titulado, lo que garantiza que todos los
-                servicios ofrecidos en nuestras clínicas se desarrollen con altos conocimientos, calidad y por supuesto una atención personalizada.
-                El único centro especializado en Terapia física y terapia Cardio-Respiratoria en la Ciudad de Chimbote.
+
+    <!--testimonios-->
+    <h2>testimonios</h2>
+    <section class="body-testimonios">
+        <div class="body-testimonios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
             </p>
-            <p class="nosotros-container-p">
-                El único centro especializado en Terapia física y terapia Cardio-Respiratoria en la Ciudad de Chimbote.
+        </div>
+
+        <div class="body-testimonios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="body-testimonios-individual">
+            <img src="https://i.postimg.cc/3wbfM6y8/nosotros.jpg" alt="servicio de ">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum
             </p>
         </div>
 
     </section>
 
+    <!--Mapa-->
+    <h2>Mapa</h2>
+    <section class="body-ubicanos">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.9800109047709!2d-78.57886587081752!3d-9.071048875260677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab8139f6534f63%3A0x336124fba3666763!2sAv.%20Peru%20429%2C%20Chimbote%2002801!5e0!3m2!1ses!2spe!4v1658284020469!5m2!1ses!2spe"
+            class="body-ubicanos-mapa" frameborder="0" width="520" height="400"></iframe>
+    </section>
+
+    <footer>
+
+    </footer>
 
 </body>
 
