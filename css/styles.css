@@ -25,9 +25,7 @@
 }
 
 .body {
-  margin: 0px;
   min-height: 200vh;
-  max-width: 100%;
   font-family: "Poppins", sans-serif;
 }
 
