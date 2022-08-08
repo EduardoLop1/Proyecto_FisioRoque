@@ -9,6 +9,7 @@
   <link href="./css/styles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,500&display=swap"
     rel="stylesheet">
@@ -60,11 +61,11 @@
       </div>
 
     </section>
-  
+  </main>
   <!--servicios-->
   <section class="servicios">
     <div class="servicios__container">
-      <h2 class="servicios__title">NUESTROS SERVICIO</h2>
+      <h2 class="servicios__title">NUESTROS SERVICIOS</h2>
       <div class="servicios__servicios-container">
         <div class="servicios__servicio">
           <div class="servicios__servicio-div">
@@ -76,7 +77,8 @@
         </div>
         <div class="servicios__servicio">
           <div class="servicios__servicio-div">
-            <img src="https://i.postimg.cc/htMRFmh7/nebulizacion-para-que-sirve.jpg" alt="" class="servicios__servicio-img">
+            <img src="https://i.postimg.cc/htMRFmh7/nebulizacion-para-que-sirve.jpg" alt=""
+              class="servicios__servicio-img">
           </div>
           <h3 class="servicios__servicio-h3">Nebulizaciones</h3>
           <p class="servicios__servicio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras metus
@@ -84,7 +86,8 @@
         </div>
         <div class="servicios__servicio">
           <div class="servicios__servicio-div">
-            <img src="https://i.postimg.cc/NfpdBk7Y/Ejercicios-respiratorio-1024x1024.png"  alt="" class="servicios__servicio-img">
+            <img src="https://i.postimg.cc/NfpdBk7Y/Ejercicios-respiratorio-1024x1024.png" alt=""
+              class="servicios__servicio-img">
           </div>
           <h3 class="servicios__servicio-h3">Ejercicios Respiratorios</h3>
           <p class="servicios__servicio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras metus
@@ -118,7 +121,50 @@
       </div>
     </div>
   </section>
-</main>
+  <div class="carrousel">
+    <div class="conteCarrousel">
+      <div class="itemCarrousel" id="itemCarrousel-1">
+        <div class="itemCarrouselTarjeta">A</div>
+        <div class="itemCarrouselArrows">
+          <a href="#itemCarrousel-3">
+            <i class="bi bi-chevron-left"></i>
+          </a>
+          <a href="#itemCarrousel-2">
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="itemCarrousel" id="itemCarrousel-2">
+        <div class="itemCarrouselTarjeta">B</div>
+        <div class="itemCarrouselArrows">
+          <a href="#itemCarrousel-1">
+            <i class="bi bi-chevron-left"></i>
+          </a>
+          <a href="#itemCarrousel-3">
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="itemCarrousel" id="itemCarrousel-3">
+        <div class="itemCarrouselTarjeta">C</div>
+        <div class="itemCarrouselArrows">
+          <a href="#itemCarrousel-2">
+            <i class="bi bi-chevron-left"></i>
+          </a>
+          <a href="#itemCarrousel-1">
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="conteCarrouselController">
+      <a href="#itemCarrousel-1">•</a>
+      <a href="#itemCarrousel-2">•</a>
+      <a href="#itemCarrousel-3">•</a>
+    </div>
+  </div>
+
+
 
 </body>
 
