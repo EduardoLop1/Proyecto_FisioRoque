@@ -29,8 +29,6 @@
   box-sizing: border-box;
 }
 .body {
-  
-  min-height: 200vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -368,7 +366,7 @@
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 864px) {
 
   /*HEADER*/
   .header-nav__menu-icon-container,
