@@ -241,7 +241,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
 
 }
 
@@ -303,26 +303,30 @@
   margin: 0;
 }
 
-.carrousel{
+.testimonios{
   width: 100%;
 }
 
-.conteCarrousel{
+.testimonios__container{
   width: 100%;
-  height: 200px;
+  height: 370px;
   overflow: hidden;
 }
 
-.itemCarrousel{
+.testimonios__testimonio-container{
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.itemCarrouselTarjeta{
+/*.itemCarrouselTarjeta{
   width: 100%;
   height: 100%;
-}
+}*/
 
 .itemCarrouselArrows{
   position: absolute;
@@ -331,7 +335,6 @@
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -341,17 +344,68 @@
 .itemCarrouselArrows > i:hover {
   cursor: pointer;
 }
+/*cambios*/
+.testimonios__title {
+  font-family: "BebasNeue";
+  color: #2B5264;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.testimonios__testimonio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+  height: 18rem;
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+.testimonios__testimonio-texto {
+  margin: 0;
+  text-align: center;
+}
+
+.testimonios__testimonio-div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  background: rgb(59, 175, 191);
+  margin-bottom: 5px;
+
+}
+
+.testimonios__testimonio-img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonios__testimonio-h3 {
+  color: rgb(59, 175, 191);
+  font-size: 20px;
+  margin: 0;
+}
+/*  -----------*/
 
 #itemCarrousel-1{
-  background-color: rgb(226, 50, 50);
+  background-color: rgb(59, 175, 191);
 }
 
 #itemCarrousel-2{
-  background-color: rgb(50, 200, 226);
+  background-color: rgb(59, 175, 191);;
 }
 
 #itemCarrousel-3{
-  background-color: rgb(200, 226, 50);
+  background-color: rgb(59, 175, 191);
 }
 
 .conteCarrouselController{
@@ -368,6 +422,23 @@
 
 .itemCarrouselArrows > a > i{
   color: white;
+}
+
+/*UBICACANOS*/
+.ubicanos-h2 {
+  font-family: "BebasNeue";
+  color: #2B5264;
+  text-align: center;
+}
+
+.ubicanos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.ubicanos-iframe{
+  height: 350px;
 }
 
 
@@ -500,6 +571,14 @@
     font-size: 50px;
     margin-bottom: -5px;
     margin-top: -2px;
+  }
+
+  /*UBICANOS*/
+  .ubicanos-h2{
+    padding-bottom: 10px;
+  }
+  .ubicanos-iframe{
+    height: 400px;
   }
 
 }
