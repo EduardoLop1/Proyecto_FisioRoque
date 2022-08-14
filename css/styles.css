@@ -141,7 +141,7 @@
 .banner-container {
   position: absolute;
   display: block;
-  top: 15%;
+  top: 130px;
   /*Posiciona el texto a partir del 5% hacia abajo*/
   left: 0 auto;
   /*Posiciona el texto a partir del 50% del bloque*/
